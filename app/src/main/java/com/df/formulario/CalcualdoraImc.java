@@ -68,15 +68,15 @@ public class CalcualdoraImc extends AppCompatActivity implements View.OnClickLis
         } else if (imc < 35) {
             imState.setImageResource(R.drawable.obesidad);
             tvRestult.setText("RESULT" +"\nSu IMC es: " + dc.format(imc)
-                    + "\nPor lo que usted tiene:\nOBECIDAD");
+                    + "\nPor lo que usted tiene:\nOBESIDAD");
         } else if (imc < 40) {
             imState.setImageResource(R.drawable.obecidadsevera);
             tvRestult.setText("RESULT" +"\nSu IMC es: " + dc.format(imc)
-                    + "\nPor lo que usted tiene:\nOBECIDAD SEVERA");
+                    + "\nPor lo que usted tiene:\nOBESIDAD SEVERA");
         } else if (imc >= 40) {
             imState.setImageResource(R.drawable.obecidadmorbida);
             tvRestult.setText("RESULT" +"\nSu IMC es: " + dc.format(imc)
-                    + "\nPor lo que usted tiene OBECIDAD MORBIDA");
+                    + "\nPor lo que usted tiene OBESIDAD MORBIDA");
         }
     }
 }
